@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "372115811900",
+    "project_id": "retail-store-management-c48ff",
+    "storage_bucket": "retail-store-management-c48ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372115811900:android:73ed436b6ff916c5cadd39",
+        "android_client_info": {
+          "package_name": "com.blackshadow.retailstoremanagementsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372115811900-9pbthro3j1f63vq8jm2hlh72ud987aa4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFFftyWbRvbwONdZio_v-jL3Q3tbW6xV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372115811900-9pbthro3j1f63vq8jm2hlh72ud987aa4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

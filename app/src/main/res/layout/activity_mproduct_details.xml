@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mproductDetailsActivity">
+    <include
+        android:id="@+id/mproduct_details__activity_toolbar"
+        layout="@layout/toolbar_layout">
+    </include>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="3dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="5dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mproduct_details__activity_toolbar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/mproductDetailImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:padding="5dp"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_action_account_circle_40" />
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/et_product_name"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:hint="Product Name"
+                        android:inputType="textPersonName"
+                        android:background="@drawable/inputs"
+                        android:padding="4dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="17dp"
+                        android:layout_alignParentLeft="true" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/et_pr_price"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/et_product_name"
+                        android:hint="Product Price"
+                        android:inputType="phone"
+                        android:background="@drawable/inputs"
+                        android:padding="4dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="17dp"
+                        android:layout_alignParentLeft="true" />
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/update_product"
+                        android:layout_below="@+id/et_pr_price"
+                        android:padding="4dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginRight="19dp"
+                        android:text="Update Product Info"
+                        android:textAllCaps="false"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/background_light"
+                        android:background="@drawable/button"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

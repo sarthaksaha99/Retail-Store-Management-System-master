@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".historyActivity">
+    <include
+        android:id="@+id/history_activity_toolbar"
+        layout="@layout/toolbar_layout">
+    </include>
+    <ListView
+        android:id="@+id/list_view_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="3dp"
+        android:listSelector="#A4F7A8"
+        android:layout_below="@+id/history_activity_toolbar" />
+</RelativeLayout>
